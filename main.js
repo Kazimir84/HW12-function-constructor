@@ -1,14 +1,17 @@
 const SIZE_SMALL = {
   price: 50,
   calories: 20,
+  type: 'small',
 }
 const SIZE_MIDLE = {
   price: 75,
   calories: 30,
+  type: 'midle',
 }
 const SIZE_LARGE = {
   price: 100,
   calories: 40,
+  type: 'large',
 }
 
 const TOPPING_MAYO = {
@@ -38,11 +41,11 @@ function Hamburger (size) {
   this.price = 0;
   this.calories = 0;
 
-if (size.price === 50) {
+if (size.type === 'small') {
   console.log('Выбран Маленький Гамбургер')
-} else if (size.price === 75) {
+} else if (size.type === 'midle') {
   console.log('Выбран Средний Гамбургер')
-} else {
+} else if (size.type === 'large') {
   console.log('Выбран Большой Гамбургер')
 };
 
